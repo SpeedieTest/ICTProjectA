@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Welcome to the Admin page{% endblock %}
+
+{% block content %}
+
+    <h1>This is the admin Homepage</h1>
+    <p>
+        <ol>
+            {% for name in names %}
+                <li>{{ name }}</li>
+            {% endfor %}
+        </ol>
+    </p>
+
+{% endblock %}
